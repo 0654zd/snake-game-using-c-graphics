@@ -144,14 +144,14 @@ int main() {
             break;
         }
 
-        // Check if food eaten (head overlaps food)
+        // Check if food eaten 
         if (snakex[0] == x && snakey[0] == y) {
             length++;          // grow snake
             score += 10;
             coordinates();     // new food position
         }
 
-        // Draw everything
+        
         cleardevice();
         drawBorder();
         drawFood();
